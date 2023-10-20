@@ -102,3 +102,50 @@ for (let i = 0; i < students.length; i++) {
 
 console.log(sumOfGrades / students.length);
 
+
+
+
+// yesterday's task i couldn't solve
+
+function includes(arr, item) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === item) {
+        return true;
+      }
+    }
+    return false;
+  }
+  
+  const distinctArr = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    6,
+    "salam",
+    "salam",
+    "salam",
+    7,
+    8,
+    8,
+    9,
+    8,
+    1,
+    4,
+  ];
+  
+  const distinctArr2 = [];
+  
+  for (let i = 0; i < distinctArr.length; i++) {
+    // 1st solution
+    // if (!distinctArr2.includes(distinctArr[i])) distinctArr2.push(distinctArr[i]);
+  
+    // 2nd solution
+    if (!includes(distinctArr2, distinctArr[i])) distinctArr2.push(distinctArr[i]);
+  }
+  
+  console.log(distinctArr2);
+  
+
